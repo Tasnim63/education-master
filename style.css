@@ -8,4 +8,15 @@
   font-family: 'Ibarra Real Nova', serif;
   font-weight:400px ;
 }
+/***************************header css style  */
+
+.header{
+min-height: 100vh;
+width: 100%;
+background-image:url("https://rn53themes.net/themes/demo/education-master/images/slider/1.jpg") ;
+opacity: 0.8;
+background-position: center;
+background-size: cover;
+position: relative;
+}
 
