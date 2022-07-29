@@ -1,22 +1,90 @@
 /* google font */
-@import url('https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Cormorant+SC:wght@300;500;700&family=Edu+VIC+WA+NT+Beginner&family=Ibarra+Real+Nova:ital,wght@0,400;0,500;1,500&family=Oswald:wght@500&family=Playfair+Display:ital,wght@0,400;0,500;1,600&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Cormorant+SC:wght@300;500;700&family=Edu+VIC+WA+NT+Beginner&family=Ibarra+Real+Nova:ital,wght@0,400;0,500;1,500&family=Oswald:wght@500&family=Playfair+Display:ital,wght@0,400;0,500;1,600&display=swap");
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Ibarra Real Nova', serif;
-  font-weight:400px ;
+  font-family: "Ibarra Real Nova", serif;
+  font-weight: 400px;
+}
+
+/* css color */
+:root {
+  --primary-color: #f36b3b;
 }
 /***************************header css style  */
 
-.header{
-min-height: 100vh;
-width: 100%;
-background-image:url("https://rn53themes.net/themes/demo/education-master/images/slider/1.jpg") ;
-opacity: 0.8;
-background-position: center;
-background-size: cover;
-position: relative;
+.header {
+  min-height: 100vh;
+  width: 100%;
+  background-image: url("https://rn53themes.net/themes/demo/education-master/images/slider/1.jpg");
+  opacity: 0.8;
+  background-position: center;
+  background-size: cover;
+  position: relative;
 }
-
+nav {
+  display: flex;
+  padding: 2% 6%;
+  justify-content: space-between;
+  align-items: center;
+}
+nav img {
+  width: 150px;
+}
+.nav_links {
+  flex: 1;
+  text-align: right;
+}
+.nav_links ul li {
+  list-style: none;
+  display: inline-block;
+  padding: 8px 12px;
+  position: relative;
+}
+.nav_links ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 13px;
+}
+.nav_links ul li::after {
+  content: "";
+  width: 0%;
+  height: 2px;
+  background-color: #f36b3b;
+  display: block;
+  margin: auto;
+  transition: 0.5s;
+}
+.nav_links ul li:hover::after {
+  width: 100%;
+}
+.text_box {
+  width: 90%;
+  color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.text_box h1 {
+  font-size: 62px;
+}
+.text_box p {
+  margin: 10px 0 40px;
+  font-size: 14px;
+  color: white;
+}
+.banner_btn {
+  display: inline-block;
+  text-decoration: none;
+  color: white;
+  border: 1px solid white;
+  font-size: 13px;
+  padding: 12px 34px;
+  background: transparent;
+  position: relative;
+  cursor: pointer;
+}
