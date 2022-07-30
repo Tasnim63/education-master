@@ -17,7 +17,7 @@
 
 .header {
   min-height: 100vh;
-  width: 100%;
+  width: 100vw;
   background-image: url("https://rn53themes.net/themes/demo/education-master/images/slider/1.jpg");
   opacity: 0.8;
   background-position: center;
@@ -87,4 +87,94 @@ nav img {
   background: transparent;
   position: relative;
   cursor: pointer;
+}
+.banner_btn:hover {
+  border: 1px solid #f36b3b;
+  background: #f36b3b;
+  transition: 1s;
+}
+nav .close{
+  margin-top: 2%;
+  margin-left: 2%;
+}
+nav .fas {
+  display: none;
+}
+/********************cources style */
+.courses{
+  width: 80%;
+  margin: auto;
+  text-align: center;
+  padding-top: 100px;
+}
+.courses h1{
+ 
+  font-size: 36px;
+  font-weight: 800;
+}
+.courses .heading_orange{
+color: #f36b3b;
+}
+.courses p{
+  font-size: 14px;
+  line-height: 22px;
+  padding: 10px;
+}
+.row{
+  margin-top: 5%;
+  display: flex;
+  justify-content: space-between;
+
+}
+.course_col{
+  flex-basis: 31%;
+  background: #f3f0f0;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  padding: 20px 12px;
+  box-sizing: border-box;
+}
+.course_col h1 {
+  text-align: center;
+  font-weight: 600;
+  color: #f36b3b;
+  margin: 10px;
+  font-size: 30px;
+  transition: .5s;
+}
+.course_col:hover{
+  box-shadow: 0 0 20px 0px rgba(0,0,0,0.2);
+}
+/*  media query for small devices*/
+@media only screen and (max-width: 700px) {
+  .text_box h1 {
+    font-size: 22px;
+  }
+  .nav_links ul li {
+    display: block;
+  }
+  .nav_links ul li a {
+    color: black;
+  }
+  .nav_links {
+    position: absolute;
+    background: white;
+    height: 100vh;
+    width: 100vw;
+    top: 0;
+    transition: 1s;
+    right: -100vw;
+    text-align: left;
+    z-index: 2;
+  }
+  nav .fas {
+    display: block;
+    color: #f36b3b;
+  }
+  .nav_links ul {
+    padding: 30px;
+  }
+  .row{
+   flex-direction: column;
+  }
 }

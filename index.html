@@ -6,30 +6,89 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
     <title>Education Master</title>
+    <!-- font cdn -->
+    <script
+      src="https://kit.fontawesome.com/cc3dec09ad.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
     <!-- https://preview.themeforest.net/item/education-college-education-master/full_screen_preview/21215976?_ga=2.213108820.1107571502.1658892489-442893672.1656644079 -->
 
     <section class="header">
-       <nav>
-        <a href="#"><img src="https://rn53themes.net/themes/demo/education-master/images/logo.png" alt="education-logo"></a>
-        <div class="nav_links">
-            <ul>
-                <li><a href="">HOME</a></li>
-                <li><a href="">ABOUT</a></li>
-                <li><a href="">COURSE</a></li>
-                <li><a href="">BLOG</a></li>
-                <li><a href="">CONTACT</a></li>
-            </ul>
+      <nav>
+        <a href="#"
+          ><img
+            src="https://rn53themes.net/themes/demo/education-master/images/logo.png"
+            alt="education-logo"
+        /></a>
+        <div id="navLinks" class="nav_links">
+          <i class="fas fa-times close" onclick="hideMenu()"></i>
+          <ul>
+            <li><a href="">HOME</a></li>
+            <li><a href="">ABOUT</a></li>
+            <li><a href="">COURSE</a></li>
+            <li><a href="">BLOG</a></li>
+            <li><a href="">CONTACT</a></li>
+          </ul>
         </div>
-       
-       </nav>
-       <div class="text_box">
+        <i class="fas fa-bars" onclick="showMenu()"></i>
+      </nav>
+      <div class="text_box">
         <h1>WELCOME TO UNIVERSITY</h1>
-       <p>Education is defined as the process
-       of gaining knowledge. An example of  <br/> education is attending college and studying.</p>
-       <a class="banner_btn" href="#">Read More</a>
-    </div>
+        <p>
+          Education is defined as the process of gaining knowledge. An example
+          of <br />
+          education is attending college and studying.
+        </p>
+        <a class="banner_btn" href="#">Read More</a>
+      </div>
     </section>
+    <!-- ----------------cources -->
+    <section class="courses">
+      <h1>Popular <span class="heading_orange"> Courses</span></h1>
+      <p>
+        your teacher adds all your scores divides the answer by the number of
+        math tests you took.
+      </p>
+      <div class="row">
+        <div class="course_col">
+          <h1>Technology / Space / Aerospace</h1>
+          <p>
+            Classes started from coming friday(21 jun 2022),total seats 72 and
+            available seats 10
+          </p>
+        </div>
+        <div class="course_col">
+          <h1>Marine Engineering</h1>
+          <p>
+            Classes started from coming friday(21 jun 2022),total seats 72 and
+            available seats 10
+          </p>
+        </div>
+        <div class="course_col">
+          <h1>Building, Construction Management</h1>
+          <p>
+            Classes started from coming friday(21 jun 2022),total seats 72 and
+            available seats 10
+          </p>
+        </div>
+      </div>
+    </section>
+    <!--------------campus start here -->
+    <section class="campus">
+      
+    </section>
+
+    <!-- javascript -->
+    <script>
+      var navLinks = document.getElementById("navLinks");
+      function showMenu() {
+        navLinks.style.right = "0";
+      }
+      function hideMenu() {
+        navLinks.style.right = "-100vw";
+      }
+    </script>
   </body>
 </html>
