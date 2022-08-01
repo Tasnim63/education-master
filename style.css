@@ -507,13 +507,21 @@ nav .fas {
   color: aliceblue;
   font-size: 36px;
 }
+.popular_courses {
+  margin-bottom: 80px;
+}
+.popular_courses h1 {
+  color: #902c07;
+  font-size: 35px;
+  padding: 70px 0;
+  text-align: center;
+}
 .popular_cards {
-  margin: 0 auto;
   width: 80%;
-  padding-top: 100px;
+  margin: 0 auto;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-gap: 40px;
+  grid-gap: 30px;
 }
 .card {
   position: relative;
