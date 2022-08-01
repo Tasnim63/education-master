@@ -18,7 +18,7 @@
 .header {
   min-height: 100vh;
   width: 100%;
-  background-image: url("https://rn53themes.net/themes/demo/education-master/images/slider/1.jpg");
+  background-image: url("https://demo.web3canvas.com/themeforest/unisco/images/slider-3.jpg");
   opacity: 0.8;
   background-position: center;
   background-size: cover;
@@ -46,7 +46,8 @@ nav img {
 .nav_links ul li a {
   color: white;
   text-decoration: none;
-  font-size: 13px;
+  font-size: 15px;
+  font-weight: bold;
 }
 .nav_links ul li::after {
   content: "";
@@ -74,15 +75,16 @@ nav img {
 }
 .text_box p {
   margin: 10px 0 40px;
-  font-size: 14px;
+  font-size: 18px;
   color: white;
+  font-weight: bold;
 }
 .banner_btn {
   display: inline-block;
   text-decoration: none;
   color: white;
-  border: 1px solid white;
-  font-size: 13px;
+  border: 2px solid white;
+  font-size: 20px;
   padding: 12px 34px;
   background: transparent;
   position: relative;
@@ -94,8 +96,8 @@ nav img {
   transition: 1s;
 }
 nav .close {
-  margin-top: 2%;
-  margin-left: 2%;
+  margin-top: 5%;
+  margin-left: 7%;
 }
 nav .fas {
   display: none;
@@ -103,10 +105,15 @@ nav .fas {
 
 /********************cources style */
 .courses {
-  width: 80%;
-  margin: auto;
   text-align: center;
   padding-top: 100px;
+}
+.courses_row {
+  width: 80%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 30px;
 }
 .courses h1 {
   font-size: 36px;
@@ -119,6 +126,7 @@ nav .fas {
   font-size: 14px;
   line-height: 22px;
   padding: 10px;
+  margin-bottom: 30px;
 }
 .courses .row {
   margin-top: 5%;
@@ -324,10 +332,30 @@ nav .fas {
   background: #f36b3b;
   transition: 1s;
 }
-@media only screen and (max-width: 992px) {
+
+/**********************footer style */
+.footer {
+  width: 100%;
+  text-align: center;
+  padding: 30px 0;
 }
+.footer h4 {
+  margin: 24px 0;
+  font-size: 30px;
+}
+.icons .fab {
+  color: #f36b3b;
+  margin: 0 13px;
+  cursor: pointer;
+  padding: 18px 0;
+  font-size: 25px;
+}
+
 /*  media query for medium devices*/
 @media only screen and (max-width: 992px) {
+  .courses_row {
+    grid-template-columns: repeat(2, 1fr);
+  }
   .discover_row {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -351,6 +379,7 @@ nav .fas {
   .text_box h1 {
     font-size: 22px;
   }
+
   .nav_links ul li {
     display: block;
   }
@@ -367,6 +396,9 @@ nav .fas {
     right: -100vw;
     text-align: left;
     z-index: 2;
+  }
+  .courses_row {
+    grid-template-columns: repeat(1, 1fr);
   }
   .discover_row {
     grid-template-columns: repeat(1, 1fr);
@@ -395,6 +427,65 @@ nav .fas {
     grid-template-columns: repeat(1, 1fr);
   }
   .online_courses h1 {
-   font-size: 24px;
+    font-size: 24px;
   }
+}
+
+/* about us page */
+.sub_header {
+  height: 50vh;
+  width: 100%;
+  background-image: url("https://demo.web3canvas.com/themeforest/unisco/images/slider.jpg");
+  opacity: 0.8;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  text-align: center;
+  color: #f3f0f0;
+}
+
+.sub_header h1 {
+  margin-top: 150px;
+  color: aliceblue;
+  font-size: 36px;
+}
+.about_us {
+  width: 80%;
+  margin: auto;
+  padding-top: 80px;
+  padding-bottom: 50px;
+}
+.about_us .row {
+  display: flex;
+}
+.about_col {
+  flex-basis: 48%;
+  padding: 20px;
+}
+.about_col h1 {
+  font-size: 30px;
+  color: #902c07;
+  margin: 10px 0;
+}
+.about_col p {
+  margin-bottom: 20px;
+}
+.about_btn {
+  display: inline-block;
+  text-decoration: none;
+  color: var(--primary-color);
+  border: 2px solid #f36b3b;
+  font-size: 15px;
+  padding: 12px 34px;
+  background: transparent;
+  position: relative;
+  cursor: pointer;
+}
+.about_btn:hover {
+  border: 1px solid #192e49;
+  background: #192e49;
+  transition: 1s;
+}
+.about_col img {
+  width: 100%;
 }
