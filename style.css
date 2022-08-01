@@ -510,7 +510,7 @@ nav .fas {
 .popular_cards {
   margin: 0 auto;
   width: 80%;
-  padding-top: 70px;
+  padding-top: 140px;
 }
 .card {
   position: relative;
@@ -566,12 +566,38 @@ nav .fas {
   transform: translateY(150px);
 }
 .card_info .details h1 {
-  font-size: 1.25rem;
+  font-size: 25px;
+
   color: #902c07;
   line-height: 1.2rem;
 }
 .card:hover .card_info .details {
   transform: translateY(0px);
+}
+
+.data_details {
+  margin-top: 27px;
+  display: flex;
+  margin-bottom: 10px;
+}
+.data_details img {
+  border-radius: 50%;
+}
+.data_details h4 {
+  margin-left: 15px;
+  font-size: 19px;
+}
+.data_price {
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+.data_price .price {
+  color: #902c07;
+  font-size: 20px;
+}
+.data_price p {
+  color: #192e49;
 }
 /* *******************blog page */
 .blog_header {
