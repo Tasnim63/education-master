@@ -513,7 +513,8 @@ nav .fas {
 .popular_courses h1 {
   color: #902c07;
   font-size: 35px;
-  padding: 70px 0;
+  padding-top:90px ;
+  padding-bottom: 40px;
   text-align: center;
 }
 .popular_cards {
@@ -560,6 +561,9 @@ nav .fas {
   width: 250px;
   height: 250px;
 }
+.card_info{
+  padding-bottom: 30px;
+}
 .card .card_info {
   position: absolute;
   width: 100%;
@@ -570,7 +574,8 @@ nav .fas {
   overflow: hidden;
 }
 .card_info .details {
-  padding: 40px;
+  padding:  0 40px;
+
   text-align: center;
   width: 100%;
   transition: 0.5s;
@@ -587,7 +592,7 @@ nav .fas {
 }
 
 .data_details {
-  margin-top: 29px;
+  margin-top: 19px;
   display: flex;
   margin-bottom: 10px;
 }
