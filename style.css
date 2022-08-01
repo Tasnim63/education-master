@@ -489,3 +489,74 @@ nav .fas {
 .about_col img {
   width: 100%;
 }
+
+/* *******************cources page */
+.courses_header {
+  height: 50vh;
+  width: 100%;
+  background-image: url("https://ng-educal.vercel.app/assets/img/page-title/page-title.jpg");
+  opacity: 0.8;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  text-align: center;
+  color: #f3f0f0;
+}
+.courses_header h1 {
+  margin-top: 150px;
+  color: aliceblue;
+  font-size: 36px;
+}
+
+/* *******************blog page */
+.blog_header {
+  height: 50vh;
+  width: 100%;
+  background-image: url("https://ng-educal.vercel.app/assets/img/page-title/page-title-3.jpg");
+  opacity: 0.8;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  text-align: center;
+  color: #f3f0f0;
+}
+.blog_header h1 {
+  margin-top: 150px;
+  color: aliceblue;
+  font-size: 36px;
+}
+.blogs_info {
+  width: 60%;
+  margin: 0 auto;
+  padding: 70px 0;
+}
+.blogs_info h1 {
+  color: #902c07;
+  font-size: 35px;
+  text-align: center;
+  padding: 10px 0;
+}
+.blogs_info p {
+  font-size: 18px;
+  color: #192e49;
+}
+
+.review {
+  width: 60%;
+  margin: 0 auto;
+  background-color: #f3f4f8;
+  padding:15px 30px;
+  overflow: hidden;
+}
+.review_info p {
+  font-size: 18px;
+  color: #192e49;
+  margin: 12px 0;
+}
+.review_info h1 {
+  font-size: 30px;
+  color: #902c07;
+}
+.review_img {
+  float: right;
+}
