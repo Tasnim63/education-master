@@ -697,18 +697,18 @@ textarea {
   font-size: 20px;
   font-weight: bold;
 }
-@media only screen and (max-width:991px){
-  .contact{
+@media only screen and (max-width: 991px) {
+  .contact {
     padding: 50px;
   }
-  .contaner{
+  .contaner {
     flex-direction: column;
   }
-  .contact_info{
+  .contact_info {
     margin-bottom: 50px;
     width: 100%;
   }
-  .contact_form{
+  .contact_form {
     width: 100%;
   }
 }
