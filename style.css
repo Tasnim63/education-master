@@ -510,12 +510,15 @@ nav .fas {
 .popular_cards {
   margin: 0 auto;
   width: 80%;
-  padding-top: 140px;
+  padding-top: 100px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 40px;
 }
 .card {
   position: relative;
   width: 350px;
-
+  margin-top: 50px;
   height: 190px;
   border-radius: 20px;
   box-shadow: 0 35px 80px rgba(0, 0, 0, 0.15);
@@ -576,7 +579,7 @@ nav .fas {
 }
 
 .data_details {
-  margin-top: 27px;
+  margin-top: 29px;
   display: flex;
   margin-bottom: 10px;
 }
@@ -599,6 +602,23 @@ nav .fas {
 .data_price p {
   color: #192e49;
 }
+@media only screen and (max-width: 1100px) {
+  .popular_cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .card {
+    margin-bottom: 70px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .popular_cards {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .card {
+    margin-bottom: 70px;
+  }
+}
+
 /* *******************blog page */
 .blog_header {
   height: 50vh;
